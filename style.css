@@ -1,3 +1,9 @@
+body {
+    margin: 0px;
+    background-color: #EDDACE;
+}
+
+
 .grid-container{
     display: flex;
     flex-wrap: wrap;
@@ -8,9 +14,9 @@
 .grid-div{
     flex: 1;
     aspect-ratio: 1/1;
-    background-color: aqua;
+    background-color: white;
 }
 
-.grid-div:hover{
+.change-color{
     background-color: rgb(140, 165, 238);
 }

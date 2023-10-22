@@ -12,16 +12,37 @@ for(let i = 0; i < nSquares**2;i++){
 }
 changeGrid()
 
+
 const gridPrompt = document.querySelector(".grid-prompt")
+
+
+
+
+
+function paintBlack(){
+    const divGrid = document.querySelectorAll(".grid-div")
+    divGrid.forEach((div) => {
+        div.addEventListener("mouseover", function(event){
+            event.target.style.backgroundColor = "black"
+            }
+        )
+    }
+    )
+}
+paintBlack()
+
+
 gridPrompt.addEventListener("click", () => {
     while (true){
         nSquares = parseInt(prompt("How many squares wide do you want your grid to be?(max = 100): "))
         if (nSquares <= 100){
             changeGrid(nSquares)
+            paintBlack()
             break;
         }
         else{
             continue;
         }
     }
+    
 } )
