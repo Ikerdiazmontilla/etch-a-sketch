@@ -1,14 +1,19 @@
 body {
     margin: 0px;
     background-color: #EDDACE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .grid-container{
     display: flex;
     flex-wrap: wrap;
-    width: 580px;
-    height: 580px;
+    width: 450px;
+    height: 450px;
+    border: 3px solid brown;
+    border-radius: 6px;
 }
 
 .grid-div{
@@ -19,4 +24,18 @@ body {
 
 .change-color{
     background-color: rgb(140, 165, 238);
+}
+
+
+.change-grid-img{
+    border-radius: 12px;
+    max-width: 100px;
+    height: auto;
+}
+
+.grid-prompt {
+    border-radius: 12px;
+    display: flex;
+    padding: 0px;
+    
 }
