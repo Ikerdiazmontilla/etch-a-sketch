@@ -1,0 +1,11 @@
+Random color:
+put a button for random color
+position it
+go to javascript
+create a function to put a random color.
+Add event listener and if the button is clicked:
+Remove event listener from paint black
+Add rainbow function
+Create a variable that has the button selected and when you
+change grid, it execute the function of the button selected
+

@@ -15,10 +15,6 @@ changeGrid()
 
 const gridPrompt = document.querySelector(".grid-prompt")
 
-
-
-
-
 function paintBlack(){
     const divGrid = document.querySelectorAll(".grid-div")
     divGrid.forEach((div) => {
@@ -29,7 +25,29 @@ function paintBlack(){
     }
     )
 }
+
 paintBlack()
+
+const rainbow = document.querySelector(".rainbow")
+
+function paintRainbow(){
+    const divGrid = document.querySelectorAll(".grid-div")
+    divGrid.forEach((div) => {
+        div.addEventListener("mouseover", function(event){
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            event.target.style.backgroundColor = "#" + randomColor;
+            }
+        )
+    }
+    )
+}
+
+
+
+rainbow.addEventListener("click", paintRainbow)
+
+
+
 
 
 gridPrompt.addEventListener("click", () => {
