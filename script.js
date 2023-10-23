@@ -29,6 +29,10 @@ function paintBlack(){
 paintBlack()
 
 const rainbow = document.querySelector(".rainbow")
+const black = document.querySelector(".black")
+const eraser = document.querySelector(".eraser")
+const clear = document.querySelector(".clear")
+const colorPicker = document.querySelector("#color-picker")
 
 function paintRainbow(){
     const divGrid = document.querySelectorAll(".grid-div")
@@ -43,9 +47,46 @@ function paintRainbow(){
 }
 
 
+function paintWhite(){
+    const divGrid = document.querySelectorAll(".grid-div")
+    divGrid.forEach((div) => {
+        div.addEventListener("mouseover", function(event){
+            event.target.style.backgroundColor = "white"
+            }
+        )
+    }
+    )
+}
+
+
+function paintSelectedColor(event){
+    const divGrid = document.querySelectorAll(".grid-div");
+    const color = event.target.value;
+    divGrid.forEach((div) => {
+        div.addEventListener("mouseover", function(event){
+            event.target.style.backgroundColor = color;
+            }
+        )
+    }
+    )
+}
+
+
+
+function clearGrid(){
+    const nElements = gridContainer.childElementCount
+    const elementsInRow = Math.sqrt(nElements)
+    changeGrid(elementsInRow)
+    paintBlack()
+}
+
+
 
 rainbow.addEventListener("click", paintRainbow)
-
+black.addEventListener("click", paintBlack)
+eraser.addEventListener("click", paintWhite)
+clear.addEventListener("click", clearGrid)
+colorPicker.addEventListener("input", paintSelectedColor)
 
 
 
