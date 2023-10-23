@@ -5,7 +5,65 @@ body {
     flex-direction: column;
     align-items: center;
 }
+h1{
+    margin: 12px;
+}
 
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+ 
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    color: white;
+  }
+  
+
+  .black {
+    background-color: #000;
+  }
+  
+  .rainbow {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  }
+  
+  .eraser {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .clear {
+    background-color: #f44336;
+  }
+  
+  
+  #color-picker {
+    height: 46px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  
+  button:hover, #color-picker:hover {
+    opacity: 0.8;
+  }
+  
 
 .grid-container{
     display: flex;
@@ -39,3 +97,6 @@ body {
     padding: 0px;
     
 }
+
+
+
