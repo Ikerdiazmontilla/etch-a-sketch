@@ -1,13 +1,14 @@
-# etch-a-sketch
-# Calculator Project
+# Etch-a-Sketch Project
 
 ## Overview
-This project is a simple calculator built as part of The Odin Project's foundations course. It demonstrates the use of HTML, CSS, and JavaScript to create a functional web-based calculator.
+A web-based version of the classic Etch-a-Sketch toy, created for The Odin Project's curriculum. This project demonstrates skills in HTML, CSS, and JavaScript.
 
 ## Features
-- Basic arithmetic operations: addition, subtraction, multiplication, and division
-- Clear and delete functions
-- User-friendly interface
+- Interactive drawing board
+- Customizable grid sizes
+- Color options for drawing
+- Rainbow option for drawing
+- Features to erase and reset the board
 
 ## Technologies Used
 - HTML
@@ -15,14 +16,14 @@ This project is a simple calculator built as part of The Odin Project's foundati
 - JavaScript
 
 ## Setup
-To run this project, download or clone the repository and open `index.html` in your browser.
+Download or clone the repository, then open `index.html` in a web browser.
 
 ## How to Use
-- Click on the numbers and operations on the calculator's interface to perform calculations.
-- Use the clear button to reset the calculator.
+- Draw on the grid by clicking and dragging.
+- Change colors and grid size using the provided controls.
 
 ## Author
 - [**Iker Diaz Montilla**](https://github.com/Ikerdiazmontilla)
 
 ## Acknowledgments
-- The Odin Project for providing the guidelines for this project.
+- The Odin Project for the inspiration and guidelines.
