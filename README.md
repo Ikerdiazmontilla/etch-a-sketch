@@ -1,5 +1,8 @@
 # Etch-a-Sketch Project
 
+## Live demo
+https://ikerdiazmontilla.github.io/etch-a-sketch/
+
 ## Overview
 A web-based version of the classic Etch-a-Sketch toy, created for The Odin Project's curriculum. This project demonstrates skills in HTML, CSS, and JavaScript.
 
